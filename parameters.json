@@ -50,7 +50,7 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "MyVm"
+            "value": "MyVmDevBox"
         },
         "virtualMachineRG": {
             "value": "MyVmRG"
