@@ -3,6 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
+            "type" : "string",
+            "allowedValues": [
+                "eastus2"
+            ],
             "defaultValue": "eastus2"
         },
         "networkInterfaceName": {
