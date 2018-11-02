@@ -3,82 +3,96 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "type": "string"
+            "value": "eastus2"
         },
         "networkInterfaceName": {
-            "type": "string"
+            "value": "myvm83"
         },
         "networkSecurityGroupName": {
-            "type": "string"
+            "value": "MyVm-nsg"
         },
         "networkSecurityGroupRules": {
-            "type": "array"
+            "value": [
+                {
+                    "name": "RDP",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "3389"
+                    }
+                }
+            ]
         },
         "virtualNetworkName": {
-            "type": "string"
+            "value": "MyVmRG-vnet"
         },
         "addressPrefix": {
-            "type": "string"
+            "value": "10.0.0.0/24"
         },
         "subnetName": {
-            "type": "string"
+            "value": "default"
         },
         "subnetPrefix": {
-            "type": "string"
+            "value": "10.0.0.0/24"
         },
         "publicIpAddressName": {
-            "type": "string"
+            "value": "MyVm-ip"
         },
         "publicIpAddressType": {
-            "type": "string"
+            "value": "Dynamic"
         },
         "publicIpAddressSku": {
-            "type": "string"
+            "value": "Basic"
         },
         "virtualMachineName": {
-            "type": "string"
+            "value": "MyVmDevBox"
         },
         "virtualMachineRG": {
-            "type": "string"
+            "value": "MyVmRG"
         },
         "osDiskType": {
-            "type": "string"
+            "value": "Premium_LRS"
         },
         "virtualMachineSize": {
-            "type": "string"
+            "value": "Standard_F8s_v2"
         },
         "adminUsername": {
-            "type": "string"
+            "value": "ocpadmin"
         },
         "adminPassword": {
-            "type": "securestring"
+            "value": null
         },
         "diagnosticsStorageAccountName": {
-            "type": "string"
+            "value": "ymdiag424"
         },
         "diagnosticsStorageAccountId": {
-            "type": "string"
+            "value": "Microsoft.Storage/storageAccounts/ymdiag424"
         },
         "diagnosticsStorageAccountType": {
-            "type": "string"
+            "value": "Standard_LRS"
         },
         "diagnosticsStorageAccountKind": {
-            "type": "string"
+            "value": "Storage"
         },
         "autoShutdownStatus": {
-            "type": "string"
+            "value": "Enabled"
         },
         "autoShutdownTime": {
-            "type": "string"
+            "value": "00:00"
         },
         "autoShutdownTimeZone": {
-            "type": "string"
+            "value": "UTC"
         },
         "autoShutdownNotificationStatus": {
-            "type": "string"
+            "value": "Disabled"
         },
         "autoShutdownNotificationLocale": {
-            "type": "string"
+            "value": "en"
         }
     },
     "variables": {
