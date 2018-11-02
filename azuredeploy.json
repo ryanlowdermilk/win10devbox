@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "default": "eastus2"
+            "defaultValue": "eastus2"
         },
         "networkInterfaceName": {
-            "value": "myvm83"
+            "defaultValue": "myvm83"
         },
         "networkSecurityGroupName": {
             "value": "MyVm-nsg"
