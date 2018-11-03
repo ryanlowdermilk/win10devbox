@@ -4,13 +4,10 @@
     "parameters": {
         "location": {
             "type" : "string",
-            "allowedValues": [
-                "eastus2"
-            ],
             "defaultValue": "eastus2"
         },
         "networkInterfaceName": {
-            "defaultValue": "myvm83"
+            "defaultValue": "[concat('myvm', uniqueString(resourceGroup().id))]"
         },
         "networkSecurityGroupName": {
             "value": "MyVm-nsg"
