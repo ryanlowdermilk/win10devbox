@@ -13,7 +13,7 @@
             "defaultValue": "MyVm-nsg"
         },
         "networkSecurityGroupRules": {
-            "value": [
+            "defaultValue": [
                 {
                     "name": "RDP",
                     "properties": {
@@ -90,10 +90,10 @@
             "defaultValue": "UTC"
         },
         "autoShutdownNotificationStatus": {
-            "value": "Disabled"
+            "defaultValue": "Disabled"
         },
         "autoShutdownNotificationLocale": {
-            "value": "en"
+            "defaultValue": "en"
         }
     },
     "variables": {
