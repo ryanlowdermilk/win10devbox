@@ -7,10 +7,10 @@
             "defaultValue": "eastus2"
         },
         "networkInterfaceName": {
-            "defaultValue": "[concat('myvm', uniqueString(resourceGroup().id))]"
+            "defaultValue": "myvm83"
         },
         "networkSecurityGroupName": {
-            "value": "MyVm-nsg"
+            "defaultValue": "MyVm-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
@@ -30,64 +30,64 @@
             ]
         },
         "virtualNetworkName": {
-            "value": "MyVmRG-vnet"
+            "defaultValue": "MyVmRG-vnet"
         },
         "addressPrefix": {
-            "value": "10.0.0.0/24"
+            "defaultValue": "10.0.0.0/24"
         },
         "subnetName": {
-            "value": "default"
+            "defaultValue": "default"
         },
         "subnetPrefix": {
-            "value": "10.0.0.0/24"
+            "defaultValue": "10.0.0.0/24"
         },
         "publicIpAddressName": {
-            "value": "MyVm-ip"
+            "defaultValue": "MyVm-ip"
         },
         "publicIpAddressType": {
-            "value": "Dynamic"
+            "defaultValue": "Dynamic"
         },
         "publicIpAddressSku": {
-            "value": "Basic"
+            "defaultValue": "Basic"
         },
         "virtualMachineName": {
-            "value": "MyVmDevBox"
+            "defaultValue": "MyVmDevBox"
         },
         "virtualMachineRG": {
-            "value": "MyVmRG"
+            "defaultValue": "MyVmRG"
         },
         "osDiskType": {
-            "value": "Premium_LRS"
+            "defaultValue": "Premium_LRS"
         },
         "virtualMachineSize": {
-            "value": "Standard_F8s_v2"
+            "defaultValue": "Standard_F8s_v2"
         },
         "adminUsername": {
-            "value": "ocpadmin"
+            "defaultValue": "ocpadmin"
         },
         "adminPassword": {
             "value": null
         },
         "diagnosticsStorageAccountName": {
-            "value": "ymdiag424"
+            "defaultValue": "ymdiag424"
         },
         "diagnosticsStorageAccountId": {
-            "value": "Microsoft.Storage/storageAccounts/ymdiag424"
+            "defaultValue": "Microsoft.Storage/storageAccounts/ymdiag424"
         },
         "diagnosticsStorageAccountType": {
-            "value": "Standard_LRS"
+            "defaultValue": "Standard_LRS"
         },
         "diagnosticsStorageAccountKind": {
-            "value": "Storage"
+            "defaultValue": "Storage"
         },
         "autoShutdownStatus": {
-            "value": "Enabled"
+            "defaultValue": "Enabled"
         },
         "autoShutdownTime": {
-            "value": "00:00"
+            "defaultValue": "00:00"
         },
         "autoShutdownTimeZone": {
-            "value": "UTC"
+            "defaultValue": "UTC"
         },
         "autoShutdownNotificationStatus": {
             "value": "Disabled"
